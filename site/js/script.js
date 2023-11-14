@@ -24,6 +24,15 @@ document.addEventListener('DOMContentLoaded', function () {
     var hamburger = document.getElementById('js-hamburger');
     hamburger.addEventListener('click', function () {
         nav.classList.toggle('open');
+
+        spNav.addEventListener('click', function () {
+          nav.classList.remove('open');
+      });
+  
+      // // blackBgをクリックしたら閉じる処理を追加
+      // blackBg.addEventListener('click', function () {
+      //     nav.classList.remove('open');
+      // });
     });
     // blackBg.addEventListener('click', function () {
     //     nav.classList.remove('open');
