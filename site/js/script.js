@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
         spNav.addEventListener('click', function () {
           nav.classList.remove('open');
       });
-  
+
       // // blackBgをクリックしたら閉じる処理を追加
       // blackBg.addEventListener('click', function () {
       //     nav.classList.remove('open');
@@ -167,6 +167,9 @@ leftAnimeElements.forEach(element => {
             box.classList.add('fadeUp');
           } else if(index === 2){
             box.classList.add('delay-time04');
+            box.classList.add('fadeUp');
+          } else if(index === 3){
+            box.classList.add('delay-time06');
             box.classList.add('fadeUp');
           }
         });
